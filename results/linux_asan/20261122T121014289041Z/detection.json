@@ -1,0 +1,62 @@
+[
+  {
+    "case": "heap",
+    "mode": "baseline",
+    "exit": 0,
+    "expected_asan_behavior": null
+  },
+  {
+    "case": "heap",
+    "mode": "asan",
+    "exit": 1,
+    "expected_asan_behavior": true
+  },
+  {
+    "case": "stack",
+    "mode": "baseline",
+    "exit": 0,
+    "expected_asan_behavior": null
+  },
+  {
+    "case": "stack",
+    "mode": "asan",
+    "exit": 1,
+    "expected_asan_behavior": true
+  },
+  {
+    "case": "global",
+    "mode": "baseline",
+    "exit": 0,
+    "expected_asan_behavior": null
+  },
+  {
+    "case": "global",
+    "mode": "asan",
+    "exit": 1,
+    "expected_asan_behavior": true
+  },
+  {
+    "case": "uaf",
+    "mode": "baseline",
+    "exit": 135,
+    "expected_asan_behavior": null
+  },
+  {
+    "case": "uaf",
+    "mode": "asan",
+    "exit": 1,
+    "expected_asan_behavior": true
+  },
+  {
+    "case": "clean",
+    "mode": "baseline",
+    "exit": 0,
+    "expected_asan_behavior": null
+  },
+  {
+    "case": "clean",
+    "mode": "asan",
+    "exit": 0,
+    "expected_asan_behavior": true
+  }
+]

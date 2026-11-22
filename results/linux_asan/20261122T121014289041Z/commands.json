@@ -1,0 +1,265 @@
+[
+  {
+    "label": "compiler",
+    "argv": [
+      "clang-18",
+      "--version"
+    ]
+  },
+  {
+    "label": "starting_commit",
+    "argv": [
+      "git",
+      "-C",
+      "/root/asan-replication-20261122",
+      "rev-parse",
+      "HEAD"
+    ]
+  },
+  {
+    "label": "git_status",
+    "argv": [
+      "git",
+      "-C",
+      "/root/asan-replication-20261122",
+      "status",
+      "--short"
+    ]
+  },
+  {
+    "label": "build-detection-baseline",
+    "argv": [
+      "clang-18",
+      "-std=c11",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "/root/asan-replication-20261122/src/detection.c",
+      "-o",
+      "/root/asan-replication-20261122/build/detection-baseline"
+    ]
+  },
+  {
+    "label": "build-benchmark-baseline",
+    "argv": [
+      "clang-18",
+      "-std=c11",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "/root/asan-replication-20261122/src/benchmark.c",
+      "-o",
+      "/root/asan-replication-20261122/build/benchmark-baseline"
+    ]
+  },
+  {
+    "label": "build-detection-asan",
+    "argv": [
+      "clang-18",
+      "-std=c11",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address",
+      "/root/asan-replication-20261122/src/detection.c",
+      "-o",
+      "/root/asan-replication-20261122/build/detection-asan"
+    ]
+  },
+  {
+    "label": "build-benchmark-asan",
+    "argv": [
+      "clang-18",
+      "-std=c11",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address",
+      "/root/asan-replication-20261122/src/benchmark.c",
+      "-o",
+      "/root/asan-replication-20261122/build/benchmark-asan"
+    ]
+  },
+  {
+    "label": "detection-heap-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-baseline",
+      "heap"
+    ]
+  },
+  {
+    "label": "detection-heap-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-asan",
+      "heap"
+    ]
+  },
+  {
+    "label": "detection-stack-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-baseline",
+      "stack"
+    ]
+  },
+  {
+    "label": "detection-stack-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-asan",
+      "stack"
+    ]
+  },
+  {
+    "label": "detection-global-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-baseline",
+      "global"
+    ]
+  },
+  {
+    "label": "detection-global-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-asan",
+      "global"
+    ]
+  },
+  {
+    "label": "detection-uaf-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-baseline",
+      "uaf"
+    ]
+  },
+  {
+    "label": "detection-uaf-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-asan",
+      "uaf"
+    ]
+  },
+  {
+    "label": "detection-clean-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-baseline",
+      "clean"
+    ]
+  },
+  {
+    "label": "detection-clean-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/detection-asan",
+      "clean"
+    ]
+  },
+  {
+    "label": "warmup-8388608-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "8388608"
+    ]
+  },
+  {
+    "label": "warmup-8388608-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-1-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-1-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-2-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-2-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-3-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "8388608"
+    ]
+  },
+  {
+    "label": "bench-8388608-3-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "8388608"
+    ]
+  },
+  {
+    "label": "warmup-16777216-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "16777216"
+    ]
+  },
+  {
+    "label": "warmup-16777216-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-1-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-1-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-2-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-2-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-3-baseline",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-baseline",
+      "16777216"
+    ]
+  },
+  {
+    "label": "bench-16777216-3-asan",
+    "argv": [
+      "/root/asan-replication-20261122/build/benchmark-asan",
+      "16777216"
+    ]
+  }
+]

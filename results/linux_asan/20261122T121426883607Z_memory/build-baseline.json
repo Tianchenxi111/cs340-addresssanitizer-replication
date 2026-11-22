@@ -1,0 +1,15 @@
+{
+  "command": [
+    "clang-18",
+    "-std=c11",
+    "-O2",
+    "-g",
+    "-fno-omit-frame-pointer",
+    "/root/asan-replication-20261122/src/benchmark_memory.c",
+    "-o",
+    "/root/asan-replication-20261122/build/memory-baseline"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ""
+}

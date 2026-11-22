@@ -15,7 +15,8 @@ int main(int argc, char **argv) {
             data[i] = data[i] * 1664525u + 1013904223u;
             sum += data[i];
         }
-    printf("%llu\n", (unsigned long long)sum);
+    /* Hex avoids the old MinGW/MSVCRT unsigned-long-long printf mismatch. */
+    printf("%08x%08x\n", (unsigned)(sum >> 32), (unsigned)sum);
     free((void *)data);
     return 0;
 }

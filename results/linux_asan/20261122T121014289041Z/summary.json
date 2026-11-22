@@ -1,0 +1,40 @@
+[
+  {
+    "size": 8388608,
+    "mode": "baseline",
+    "mean_seconds": 0.8498563376667031,
+    "sample_sd_seconds": 0.00715908237823748,
+    "runs": 3
+  },
+  {
+    "size": 8388608,
+    "mode": "asan",
+    "mean_seconds": 1.295685743999987,
+    "sample_sd_seconds": 0.006366486892642895,
+    "runs": 3
+  },
+  {
+    "size": 8388608,
+    "asan_to_baseline_ratio": 1.5245938478935357,
+    "overhead_percent": 52.45938478935357
+  },
+  {
+    "size": 16777216,
+    "mode": "baseline",
+    "mean_seconds": 1.549065388000031,
+    "sample_sd_seconds": 0.1383316998615542,
+    "runs": 3
+  },
+  {
+    "size": 16777216,
+    "mode": "asan",
+    "mean_seconds": 2.3833373249999945,
+    "sample_sd_seconds": 0.15941175637300076,
+    "runs": 3
+  },
+  {
+    "size": 16777216,
+    "asan_to_baseline_ratio": 1.5385647006657843,
+    "overhead_percent": 53.85647006657843
+  }
+]

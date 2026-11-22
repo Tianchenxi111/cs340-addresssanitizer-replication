@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172033}.title{font-size:24px;font-weight:700}.label{font-size:15px}.small{font-size:12px;fill:#475569}</style>
+<text x="60" y="45" class="title">Synthetic workload: baseline and AddressSanitizer runtime</text>
+<text x="60" y="72" class="small">Ubuntu 24.04.5 / Clang 18.1.3; mean ± sample SD, n=3 per bar; one warmup</text>
+<line x1="85" y1="450.0" x2="950" y2="450.0" stroke="#e2e8f0"/>
+<text x="48" y="455.0" class="small">0.0</text>
+<line x1="85" y1="391.1" x2="950" y2="391.1" stroke="#e2e8f0"/>
+<text x="48" y="396.1" class="small">0.5</text>
+<line x1="85" y1="332.1" x2="950" y2="332.1" stroke="#e2e8f0"/>
+<text x="48" y="337.1" class="small">1.0</text>
+<line x1="85" y1="273.2" x2="950" y2="273.2" stroke="#e2e8f0"/>
+<text x="48" y="278.2" class="small">1.5</text>
+<line x1="85" y1="214.3" x2="950" y2="214.3" stroke="#e2e8f0"/>
+<text x="48" y="219.3" class="small">2.0</text>
+<line x1="85" y1="155.4" x2="950" y2="155.4" stroke="#e2e8f0"/>
+<text x="48" y="160.4" class="small">2.5</text>
+<text x="20" y="265" transform="rotate(-90 20 265)" class="label">Elapsed seconds</text>
+<rect x="170" y="352.1" width="52" height="97.9" fill="#2563eb"/>
+<line x1="196" y1="350.4" x2="196" y2="353.8" stroke="#111827" stroke-width="2"/>
+<text x="196" y="341.1" text-anchor="middle" class="small">0.83</text>
+<rect x="232" y="304.2" width="52" height="145.8" fill="#f97316"/>
+<line x1="258" y1="301.8" x2="258" y2="306.6" stroke="#111827" stroke-width="2"/>
+<text x="258" y="293.2" text-anchor="middle" class="small">1.24</text>
+<rect x="310" y="349.8" width="52" height="100.2" fill="#2563eb"/>
+<line x1="336" y1="349.0" x2="336" y2="350.7" stroke="#111827" stroke-width="2"/>
+<text x="336" y="338.8" text-anchor="middle" class="small">0.85</text>
+<rect x="372" y="297.3" width="52" height="152.7" fill="#f97316"/>
+<line x1="398" y1="296.5" x2="398" y2="298.0" stroke="#111827" stroke-width="2"/>
+<text x="398" y="286.3" text-anchor="middle" class="small">1.30</text>
+<text x="292" y="477" text-anchor="middle" class="label">8,388,608 elements</text>
+<text x="222" y="495" text-anchor="middle" class="small">Initial</text>
+<text x="362" y="495" text-anchor="middle" class="small">Rerun</text>
+<rect x="570" y="256.4" width="52" height="193.6" fill="#2563eb"/>
+<line x1="596" y1="254.0" x2="596" y2="258.9" stroke="#111827" stroke-width="2"/>
+<text x="596" y="245.4" text-anchor="middle" class="small">1.64</text>
+<rect x="632" y="160.4" width="52" height="289.6" fill="#f97316"/>
+<line x1="658" y1="159.6" x2="658" y2="161.2" stroke="#111827" stroke-width="2"/>
+<text x="658" y="149.4" text-anchor="middle" class="small">2.46</text>
+<rect x="710" y="267.4" width="52" height="182.6" fill="#2563eb"/>
+<line x1="736" y1="251.1" x2="736" y2="283.7" stroke="#111827" stroke-width="2"/>
+<text x="736" y="256.4" text-anchor="middle" class="small">1.55</text>
+<rect x="772" y="169.1" width="52" height="280.9" fill="#f97316"/>
+<line x1="798" y1="150.3" x2="798" y2="187.9" stroke="#111827" stroke-width="2"/>
+<text x="798" y="158.1" text-anchor="middle" class="small">2.38</text>
+<text x="692" y="477" text-anchor="middle" class="label">16,777,216 elements</text>
+<text x="622" y="495" text-anchor="middle" class="small">Initial</text>
+<text x="762" y="495" text-anchor="middle" class="small">Rerun</text>
+<rect x="350" y="514" width="18" height="18" fill="#2563eb"/>
+<text x="375" y="528" class="label">Baseline</text>
+<rect x="500" y="514" width="18" height="18" fill="#f97316"/>
+<text x="525" y="528" class="label">AddressSanitizer</text>
+<text x="500" y="551" text-anchor="middle" class="small">Original workload, not SPEC CPU2006; raw logs in results/linux_asan/</text>
+</svg>

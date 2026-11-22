@@ -1,0 +1,30 @@
+[
+  {
+    "size": 8388608,
+    "n_per_mode": 3,
+    "VmPeak_kB_baseline_mean": 35464,
+    "VmPeak_kB_baseline_sample_sd": 0.0,
+    "VmPeak_kB_asan_mean": 21474921576,
+    "VmPeak_kB_asan_sample_sd": 0.0,
+    "VmPeak_kB_asan_to_baseline_ratio": 605541.4385292127,
+    "VmHWM_kB_baseline_mean": 34505.333333333336,
+    "VmHWM_kB_baseline_sample_sd": 2.309401076758503,
+    "VmHWM_kB_asan_mean": 38016,
+    "VmHWM_kB_asan_sample_sd": 13.856406460551018,
+    "VmHWM_kB_asan_to_baseline_ratio": 1.101742725762201
+  },
+  {
+    "size": 16777216,
+    "n_per_mode": 3,
+    "VmPeak_kB_baseline_mean": 68232,
+    "VmPeak_kB_baseline_sample_sd": 0.0,
+    "VmPeak_kB_asan_mean": 21474954344,
+    "VmPeak_kB_asan_sample_sd": 0.0,
+    "VmPeak_kB_asan_to_baseline_ratio": 314734.35256184783,
+    "VmHWM_kB_baseline_mean": 67274.66666666667,
+    "VmHWM_kB_baseline_sample_sd": 2.309401076758503,
+    "VmHWM_kB_asan_mean": 70814.66666666667,
+    "VmHWM_kB_asan_sample_sd": 50.64911976859354,
+    "VmHWM_kB_asan_to_baseline_ratio": 1.0526201046456318
+  }
+]
